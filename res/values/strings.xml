@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">跨传</string>
+    <string name="send_title">发送文件</string>
+    <string name="receive_title">接收文件</string>
+</resources>

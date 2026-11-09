@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <ImageView
+            android:layout_width="76dp"
+            android:layout_height="76dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="跨传"
+            android:textColor="@color/text"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="不挑品牌 · 不走流量 · 局域网直传"
+            android:textColor="@color/sub"
+            android:textSize="13sp" />
+
+        <View android:layout_width="1dp" android:layout_height="18dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="怎么用"
+                android:textColor="@color/text"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <View android:layout_width="1dp" android:layout_height="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="6dp"
+                android:text="① 两台手机连同一个 Wi‑Fi；没有 Wi‑Fi 就由 A 开热点、B 连上\n② 接收端点「我要接收」，记下页面上的 IP\n③ 发送端填入这个 IP，选任意文件或已装应用，点发送\n④ 收到 APK 后可在通知栏或接收页直接点安装"
+                android:textColor="@color/text"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <View android:layout_width="1dp" android:layout_height="14dp" />
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_btn"
+            android:text="我要发送"
+            android:textColor="@color/card"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View android:layout_width="1dp" android:layout_height="10dp" />
+
+        <Button
+            android:id="@+id/btn_recv"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:background="@drawable/bg_btn_ghost"
+            android:text="我要接收"
+            android:textColor="@color/primary"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View android:layout_width="1dp" android:layout_height="6dp" />
+
+        <Button
+            android:id="@+id/btn_hotspot"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:text="没有同一 Wi‑Fi？去开热点"
+            android:textColor="@color/sub"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_perm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="收到 APK 后想直接点开安装，需要允许本应用「安装未知应用」。"
+            android:textColor="@color/sub"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_perm"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="去开启"
+            android:textColor="@color/primary"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <View android:layout_width="1dp" android:layout_height="14dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="支持 apk / 图片 / 视频 / 文档等任意文件\n传输只发生在两台手机之间，不经过任何服务器"
+            android:textColor="@color/sub"
+            android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>
